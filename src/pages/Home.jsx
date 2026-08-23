@@ -1,5 +1,7 @@
 import { ArrowRight, CheckCircle2 } from "lucide-react";
+import { Link } from "react-router-dom";
 import heroImage from "../assets/hero.png";
+import logo from "../assets/logo.png";
 
 function Home() {
   return (
@@ -26,15 +28,15 @@ function Home() {
           </p>
 
           <div className="hero-buttons">
-            <a href="/contact" className="primary-button">
-              Get Your Website
-              <ArrowRight size={19} />
-            </a>
+            <Link to="/contact" className="primary-button">
+  Get Your Website
+  <ArrowRight size={19} />
+</Link>
 
-            <a href="/portfolio" className="secondary-button">
-              See Our Work
-              <ArrowRight size={19} />
-            </a>
+            <Link to="/portfolio" className="secondary-button">
+  See Our Work
+  <ArrowRight size={19} />
+</Link>
           </div>
 
           <div className="hero-features">
@@ -59,10 +61,10 @@ function Home() {
           <div className="hero-glow"></div>
 
           <img
-            src={heroImage}
-            alt="ECLATERA website design"
-            className="hero-image"
-          />
+    src={logo}
+    alt="ECLATERA"
+    className="hero-image"
+  />
         </div>
       </section>
 
@@ -192,10 +194,10 @@ function Home() {
       digital presence that makes a lasting impression.
     </p>
 
-    <a href="/contact" className="primary-button">
-      Start Your Project
-      <ArrowRight size={19} />
-    </a>
+    <Link to="/contact" className="primary-button">
+  Start Your Project
+  <ArrowRight size={19} />
+</Link>
   </div>
 </section>
     </main>
